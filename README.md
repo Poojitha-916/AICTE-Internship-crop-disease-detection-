@@ -14,23 +14,22 @@ Dataset Name: [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/pla
   Source: Kaggle (emmarex/plantdisease)
   Format: Labeled images (RGB)
 
-Model Architecture
-Base Model**: `MobileNetV2` (Pretrained on ImageNet)
+## Model Architecture
+Base Model: `MobileNetV2` (Pretrained on ImageNet)
 Custom Layers:
    Global Average Pooling
    Dense (128 units, ReLU)
    Output Layer (Softmax for 15 classes)
 
   Loss Function: categorical_crossentropy
-  Optimizer: `Adam`
+  Optimizer: Adam
   Epochs Trained: 5
   Validation Accuracy: ~92.31%
- Testing the Model
+ ## Testing the Model
 
-Upload an image of a crop leaf and run it through the model using the provided `test_model(img_path)` function. The model will return:
+Upload an image of a crop leaf and run it through the model using the provided 'test_model(img_path)' function. The model will return:
   Predicted disease label
   An advisory message based on the result
 Example Output
-shell
 Predicted Class: Tomato_Early_blight  
 Advisory: ⚠️ Disease detected. Remove infected parts and apply recommended treatment.
