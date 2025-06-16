@@ -1,0 +1,1 @@
+# AICTE-Internship-crop-disease-detection-
